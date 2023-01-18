@@ -1,0 +1,52 @@
+* {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.digit-display {
+    display: flex;
+    flex-direction: row;
+    column-gap: .8vw;
+}
+
+.digit-container {
+    display: flex;
+}
+
+.segments-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.segments-middle .segment {
+    height: 1vh;
+    width: 2.5vw;
+}
+
+.segments-left .segment,
+.segments-right .segment {
+    height: 10vh;
+    width: .5vw;
+}
+
+.segment {
+    margin: .5vh .1vh;
+    border-radius: .8vh;
+}
+
+.off{
+    background-color: transparent;
+}
+
+.on{
+    background-color: red;
+}
